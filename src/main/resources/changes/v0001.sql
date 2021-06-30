@@ -1,5 +1,5 @@
 create table pokemon(
-    id BIGSERIAL PRIMARY KEY,
+    id INTEGER PRIMARY KEY,
     name VARCHAR,
     size INTEGER,
     external_id INTEGER
