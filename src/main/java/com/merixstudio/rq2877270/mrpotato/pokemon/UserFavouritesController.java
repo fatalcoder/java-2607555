@@ -12,13 +12,10 @@ public class UserFavouritesController {
         this.repository = repository;
     }
 
-    // Aggregate root
-    // tag::get-aggregate-root[]
     @GetMapping("/favourites")
     List<UserFavourites> all() {
         return repository.findAll();
     }
-    // end::get-aggregate-root[]
 
     @PostMapping("/favourites")
     UserFavourites newFavourite(@RequestBody UserFavourites newFavourite) {
