@@ -20,6 +20,22 @@ public class PokemonDto {
         return height * weight;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setWeight(Integer weight) {
+        this.weight = weight;
+    }
+
+    public void setHeight(Integer height) {
+        this.height = height;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

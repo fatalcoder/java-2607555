@@ -1,15 +1,12 @@
 package com.merixstudio.rq2877270.mrpotato.pokemon;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Table;
 import java.util.Objects;
 
 @Entity
 public class Pokemon {
     private @Id
-    @GeneratedValue
     Long id;
     private String name;
     private Integer size;
