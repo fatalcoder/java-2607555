@@ -7,14 +7,12 @@ import javax.persistence.Table;
 import java.util.Objects;
 
 @Entity
-//@Table(name="pokemon", schema = "public")
 public class Pokemon {
     private @Id
     @GeneratedValue
     Long id;
     private String name;
     private Integer size;
-    private Integer externalId;
 
     protected Pokemon() {
     }
@@ -36,10 +34,6 @@ public class Pokemon {
         return this.size;
     }
 
-    public Integer getExternalId() {
-        return this.externalId;
-    }
-
     public void setId(Long id) {
         this.id = id;
     }
@@ -50,10 +44,6 @@ public class Pokemon {
 
     public void setSize(Integer size) {
         this.size = size;
-    }
-
-    public void setExternalId(Integer externalId) {
-        this.externalId = externalId;
     }
 
     @Override
